@@ -96,7 +96,7 @@ ALTER TABLE `libros`
 --
 ALTER TABLE `prestamos`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `IdLibro` (`idLibro`),
+  ADD KEY `idLibro` (`idLibro`),
   ADD KEY `idUsuario` (`idUsuario`);
 
 --
@@ -147,7 +147,7 @@ ALTER TABLE `libros`
 -- Filtros para la tabla `prestamos`
 --
 ALTER TABLE `prestamos`
-  ADD CONSTRAINT `prestamos_ibfk_1` FOREIGN KEY (`IdLibro`) REFERENCES `libros` (`id`),
+  ADD CONSTRAINT `prestamos_ibfk_1` FOREIGN KEY (`idLibro`) REFERENCES `libros` (`id`),
   ADD CONSTRAINT `prestamos_ibfk_2` FOREIGN KEY (`idUsuario`) REFERENCES `usuarios` (`id`);
 COMMIT;
 

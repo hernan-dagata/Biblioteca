@@ -1,10 +1,10 @@
 <?php
 
 class Database {
-    private $host = "127.0.0.1";
-    private $dbname = "Biblioteca";
-    private $username = "admin";
-    private $password = "admin";
+    private $host = "containers-us-west-89.railway.app";
+    private $dbname = "railway";
+    private $username = "root";
+    private $password = "gS4gavPEqNXjETjUG326";
     public $conn;
 
     public function getConnection() {
