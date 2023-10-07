@@ -1,5 +1,4 @@
 <?php
-include 'template/header.php';
 require_once __DIR__ . "/../controllers/LibroController.php";
 require_once __DIR__ . "/../controllers/AutorController.php";
 
@@ -30,6 +29,8 @@ if (isset($_GET['edit'])) {
     $result = $libroObj->readOne();
     $libro = $result->fetch(PDO::FETCH_ASSOC);
 }
+
+include 'template/header.php';
 ?>
 
     <div class="container">

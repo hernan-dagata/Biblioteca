@@ -1,6 +1,4 @@
 <?php
-include 'template/header.php';
-
 require_once __DIR__ . "/../controllers/PrestamoController.php";
 require_once __DIR__ . "/../controllers/UsuarioController.php";
 require_once __DIR__ . "/../controllers/LibroController.php";
@@ -32,6 +30,7 @@ if (isset($_GET['edit'])) {
     $prestamo = $result->fetch(PDO::FETCH_ASSOC);
 }
 
+include 'template/header.php';
 ?>
 
     <div class="container">

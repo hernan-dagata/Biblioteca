@@ -1,5 +1,4 @@
 <?php
-include 'template/header.php';
 require_once __DIR__ . "/../controllers/AutorController.php";
 $autorController = new AutorController();
 
@@ -25,6 +24,8 @@ if (isset($_GET['edit'])) {
     $result = $autorObj->readOne();
     $autor = $result->fetch(PDO::FETCH_ASSOC);
 }
+
+include 'template/header.php';
 ?>
 
     <div class="container">
