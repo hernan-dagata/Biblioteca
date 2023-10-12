@@ -17,9 +17,9 @@ $pdf->Cell(0, 10, 'Lista de libros', 0, 1, 'C');
 $pdf->SetFont('Arial', 'B', 12);
 $pdf->SetFillColor(200, 220, 255);
 $pdf->Cell(15, 10, 'ID', 1, 0, 'L', 1);
-$pdf->Cell(60, 10, 'Título', 1, 0, 'L', 1);
+$pdf->Cell(60, 10, 'Titulo', 1, 0, 'L', 1);
 $pdf->Cell(50, 10, 'Autor', 1, 0, 'L', 1);
-$pdf->Cell(20, 10, 'Año', 1, 0, 'L', 1);
+$pdf->Cell(20, 10, 'Anio', 1, 0, 'L', 1);
 $pdf->Cell(40, 10, 'ISBN', 1, 1, 'L', 1);
 
 $dbInstance = new Database();

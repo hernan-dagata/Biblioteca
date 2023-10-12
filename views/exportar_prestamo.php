@@ -22,8 +22,8 @@ $pdf->SetFillColor(200, 220, 255);
 $pdf->Cell(10, 10, 'ID', 1, 0, 'L', 1);
 $pdf->Cell(50, 10, 'Usuario', 1, 0, 'L', 1);
 $pdf->Cell(60, 10, 'Libro', 1, 0, 'L', 1);
-$pdf->Cell(35, 10, 'Fecha préstamo', 1, 0, 'L', 1);
-$pdf->Cell(35, 10, 'Fecha devolución', 1, 1, 'L', 1);
+$pdf->Cell(35, 10, 'Fecha prestamo', 1, 0, 'L', 1);
+$pdf->Cell(35, 10, 'Fecha devolucion', 1, 1, 'L', 1);
 
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     $pdf->Cell(10, 10, $row['id'], 1);
