@@ -22,13 +22,13 @@ $pdf->SetFillColor(200, 220, 255);
 $pdf->Cell(10, 10, 'ID', 1, 0, 'L', 1);
 $pdf->Cell(50, 10, 'Usuario', 1, 0, 'L', 1);
 $pdf->Cell(60, 10, 'Libro', 1, 0, 'L', 1);
-$pdf->Cell(35, 10, utf8_decode('Fecha préstamo'), 1, 0, 'L', 1);
-$pdf->Cell(35, 10, utf8_decode('Fecha devolución'), 1, 1, 'L', 1);
+$pdf->Cell(35, 10, 'Fecha préstamo', 1, 0, 'L', 1);
+$pdf->Cell(35, 10, 'Fecha devolución', 1, 1, 'L', 1);
 
 while ($row = $result->fetch(PDO::FETCH_ASSOC)) {
     $pdf->Cell(10, 10, $row['id'], 1);
-    $pdf->Cell(50, 10, utf8_decode($usuarioController->getUsuarioNombreById($row['idUsuario'])), 1);
-    $pdf->Cell(60, 10, utf8_decode($libroController->getLibroTituloById($row['idLibro'])), 1);
+    $pdf->Cell(50, 10, $usuarioController->getUsuarioNombreById($row['idUsuario']), 1);
+    $pdf->Cell(60, 10, $libroController->getLibroTituloById($row['idLibro']), 1);
     $pdf->Cell(35, 10, $row['fechaPrestamo'], 1);
     $pdf->Cell(35, 10, $row['fechaDevolucion'], 1, 1);
 }
