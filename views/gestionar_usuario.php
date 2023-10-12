@@ -70,7 +70,7 @@ include 'template/header.php';
                         <th>Nombre</th>
                         <th>Dirección</th>
                         <th>Teléfono</th>
-                        <th>Acción</th>
+                        <th><a href="exportar_usuario.php" target="_blank" class="btn btn-info">Exportar a PDF</a></th>
                     </tr>
                 </thead>
                 <tbody>

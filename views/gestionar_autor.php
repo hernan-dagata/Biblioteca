@@ -65,7 +65,7 @@ include 'template/header.php';
                         <th>ID</th>
                         <th>Nombre</th>
                         <th>Fecha de nacimiento</th>
-                        <th>Acción</th>
+                        <th><a href="exportar_autor.php" target="_blank" class="btn btn-info">Exportar a PDF</a></th>
                     </tr>
                 </thead>
                 <tbody>

@@ -97,7 +97,7 @@ include 'template/header.php';
                         <th>Libro</th>
                         <th>Fecha de Préstamo</th>
                         <th>Fecha de Devolución</th>
-                        <th>Acción</th>
+                        <th><a href="exportar_prestamo.php" target="_blank" class="btn btn-info">Exportar a PDF</a></th>
                     </tr>
                 </thead>
                 <tbody>

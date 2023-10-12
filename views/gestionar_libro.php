@@ -87,7 +87,7 @@ include 'template/header.php';
                         <th>Autor</th>
                         <th>Año de Publicación</th>
                         <th>ISBN</th>
-                        <th>Acción</th>
+                        <th><a href="exportar_libro.php" target="_blank" class="btn btn-info">Exportar a PDF</a></th>
                     </tr>
                 </thead>
                 <tbody>
